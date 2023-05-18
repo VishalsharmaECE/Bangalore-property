@@ -34,12 +34,12 @@ def load_saved_artifacts():
     global __data_columns 
     global __locations 
 
-    with open("./server/artifacts/columns.json", 'r') as f:
+    with open("./artifacts/columns.json", 'r') as f:
         __data_columns = json.load(f)['data_columns']
         __locations = __data_columns[3:]
 
     global __model
-    with open("./server/artifacts/bengaluru_house_price_model.pickle", 'rb') as f:
+    with open("./artifacts/bengaluru_house_price_model.pickle", 'rb') as f:
         __model = pickle.load(f)
 
 if __name__ == "__main__":
