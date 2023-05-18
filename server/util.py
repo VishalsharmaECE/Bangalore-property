@@ -42,12 +42,12 @@ def load_saved_artifacts():
     with open("./artifacts/bengaluru_house_price_model.pickle", 'rb') as f:
         __model = pickle.load(f)
 
+load_saved_artifacts()
+
 if __name__ == "__main__":
-    load_saved_artifacts()
-    print(get_location_names())
-    print(get_estimated_price('1st Phase JP Nagar', 1000, 3,3))
-    print(get_estimated_price('1st Phase JP Nagar', 1000, 2,2))
-    print(get_estimated_price('Kalhalli',1000,2,2)) #other locations
-    print(get_estimated_price('Ejipura', 1000,2,2)) #other locations
-
-
+    pass
+    # print(get_location_names())
+    # print(get_estimated_price('1st Phase JP Nagar', 1000, 3,3))
+    # print(get_estimated_price('1st Phase JP Nagar', 1000, 2,2))
+    # print(get_estimated_price('Kalhalli',1000,2,2)) #other locations
+    # print(get_estimated_price('Ejipura', 1000,2,2)) #other locations
